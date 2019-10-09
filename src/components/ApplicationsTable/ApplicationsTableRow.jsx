@@ -9,7 +9,9 @@ const ApplicationsTableRow = ({ application }) => {
     <>
       <div className="ApplicantTable-cell">
         <div>{application.candidate.name}</div>
-        <div>{application.candidate.email}</div>
+        <div className="ApplicantTable-email">
+          {application.candidate.email}
+        </div>
       </div>
       <div className="ApplicantTable-cell">{application.status}</div>
       <div className="ApplicantTable-cell">
