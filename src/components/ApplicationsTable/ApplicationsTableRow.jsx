@@ -6,7 +6,7 @@ import './Table.css';
 
 const ApplicationsTableRow = ({ application }) => {
   return (
-    <>
+    <div className="ApplicantTable-row">
       <div className="ApplicantTable-cell">
         <div>{application.candidate.name}</div>
         <div className="ApplicantTable-email">
@@ -24,7 +24,7 @@ const ApplicationsTableRow = ({ application }) => {
       <div className="ApplicantTable-cell centered">
         <FontAwesomeIcon icon={faArrowRight} />
       </div>
-    </>
+    </div>
   );
 };
 
