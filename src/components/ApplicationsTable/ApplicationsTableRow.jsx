@@ -4,9 +4,9 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 import './Table.css';
 
-const ApplicationsTableRow = ({ application }) => {
+const ApplicationsTableRow = ({ application, onClick }) => {
   return (
-    <div className="ApplicantTable-row">
+    <div className="ApplicantTable-row" onClick={onClick}>
       <div className="ApplicantTable-cell">
         <div>{application.candidate.name}</div>
         <div className="ApplicantTable-email">
