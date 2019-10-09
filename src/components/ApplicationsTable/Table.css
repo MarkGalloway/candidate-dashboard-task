@@ -1,0 +1,33 @@
+.ApplicantTable {
+  display: grid;
+  grid-template-columns:
+    minmax(250px, 1fr)
+    repeat(5, minmax(100px, 1fr));
+  grid-row-gap: 1em;
+  align-items: center;
+}
+
+.ApplicantTable .ApplicantTable-Header-cell,
+.ApplicantTable .ApplicantTable-cell {
+  padding: 0 1em;
+}
+
+
+.ApplicantTable-Header-cell {
+  font-weight: lighter;
+  font-size: 0.9em;
+}
+
+.ApplicantTable-cell {
+  background-color: #FFFFFF;
+
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+
+  height: 5em;
+}
+
+.ApplicantTable-cell.centered {
+  align-items: center;
+}
