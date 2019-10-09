@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import ApplicationsTableHeader from './ApplicationsTableHeader';
 import ApplicationsTableRow from './ApplicationsTableRow';
+import { CandidateSummary } from '../CandidateSummary';
 import { Modal } from '../Modal';
 import './Table.css';
 
@@ -22,6 +23,7 @@ export const ApplicationsTable = ({ applications }) => {
   return (
     <>
       <Modal isOpen={isModalOpen} onClose={onModalClose}>
+        <CandidateSummary candidate={selectedCandidate} />
       </Modal>
       <div className="ApplicantTable">
         <ApplicationsTableHeader />

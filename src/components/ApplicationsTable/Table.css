@@ -41,10 +41,3 @@
 .ApplicantTable-cell.centered {
   align-items: center;
 }
-
-
-.ApplicantTable-email {
-  color: #666;
-  font-weight: lighter;
-  font-size: 0.95em;
-}

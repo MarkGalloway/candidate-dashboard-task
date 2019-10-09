@@ -3,15 +3,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 import './Table.css';
+import '../Applicant.css';
 
 const ApplicationsTableRow = ({ application, onClick }) => {
   return (
     <div className="ApplicantTable-row" onClick={onClick}>
       <div className="ApplicantTable-cell">
         <div>{application.candidate.name}</div>
-        <div className="ApplicantTable-email">
-          {application.candidate.email}
-        </div>
+        <div className="Applicant-email">{application.candidate.email}</div>
       </div>
       <div className="ApplicantTable-cell">{application.status}</div>
       <div className="ApplicantTable-cell">
